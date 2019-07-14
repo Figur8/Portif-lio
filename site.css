@@ -37,7 +37,7 @@ body,
 }
 
 #p2 {
-    background: tomato;
+    background: #BDE7FF;
 }
 
 #p3 {
@@ -57,7 +57,7 @@ body,
 #t4:target #p4,
 #t5:target #p5 {
     transform: translateX(-190%);
-    -webkit-transform: translateX(-190%);
+    -webkit-transform: translateX(-172.5%);
     -moz-transform: translateX(-172%);
     -o-transform: translateX(-190%);
     transition-delay: .4s !important;
@@ -106,7 +106,7 @@ ul .icon:hover {
 #t2:target #dos,
 #t3:target #tres,
 #t4:target #cuatro,
-#t4:target #cinco {
+#t5:target #cinco {
     transform: scale(1.2) !important;
     -webkit-transform: scale(1.2) !important;
     -moz-transform: scale(1.2) !important;
@@ -242,20 +242,15 @@ a {
 #perfil {
     border-radius: 100%;
     display: inline-block;
-    height: 140px;
-    width: 140px;
-    border: 12px solid #;
+    height: 160px;
+    width: 160px;
+    border: 5px solid rgb(30, 3, 68);
     background-color: #FFFF00;
+    transform-style: preserve-3d;
 }
 
 #perfil:hover {
-    -webkit-transform: scale(1.3);
-    /* prefixo para browsers webkit */
-    -moz-transform: scale(1.3);
-    /* prefixo para browsers gecko */
-    -o-transform: scale(1.3);
-    /* prefixo para opera */
-    transform: scale(1.3);
+    /* fazer algo legal ao colocar o mouse em cima  */
 }
 
 
@@ -292,7 +287,7 @@ h2 {
     text-align: center;
     margin: 40px 0;
     font-family: monaco;
-    color: #693BB6;
+    color: white;
 }
 
 h2 {

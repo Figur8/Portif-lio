@@ -9,8 +9,23 @@ body,
     -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
     -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
     -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
-    color: #fff;
+    color: #EBEFF2;
     overflow: hidden;
+    background-color: #04090D;
+}
+
+#p1 span {
+    margin: 0;
+    margin-right: 0px;
+    padding: 0;
+    transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+    -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+    -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+    -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+    color: #EBEFF2;
+    overflow: hidden;
+    position: absolute;
+    margin-right: -115%;
 }
 
 * {
@@ -33,23 +48,23 @@ body,
 }
 
 #p1 {
-    background: darkslateblue;
+    background: #021F58;
 }
 
 #p2 {
-    background: #BDE7FF;
+    background: #2D2C40;
 }
 
 #p3 {
-    background: gold;
+    background: #2D2C40;
 }
 
 #p4 {
-    background: deeppink;
+    background: #A39EE6;
 }
 
 #p5 {
-    background: rebeccapurple;
+    background: #B5B0FF;
 }
 
 #t2:target #p2,
@@ -162,7 +177,7 @@ a {
 }
 
 .hint {
-    font-size: 13px;
+    font-size: 24px;
 }
 
 #p4 .hint {
@@ -229,13 +244,6 @@ a {
 
 /* testando */
 
-#selector {
-    height: 100%;
-    width: 40000px;
-    max-width: 28%;
-    object-fit: cover;
-}
-
 
 /* circle imagem */
 
@@ -244,8 +252,8 @@ a {
     display: inline-block;
     height: 160px;
     width: 160px;
-    border: 5px solid rgb(30, 3, 68);
-    background-color: #FFFF00;
+    border: 5px solid #021F58;
+    background-color: black;
     transform-style: preserve-3d;
 }
 
@@ -290,6 +298,10 @@ h2 {
     color: white;
 }
 
+u {
+    font-size: 100%;
+}
+
 h2 {
     margin-bottom: 100px;
 }
@@ -321,4 +333,15 @@ footer {
 #origamid:hover::after,
 #origamid:hover::before {
     width: 100%;
+}
+
+
+/* universe test */
+
+canvas {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
 }

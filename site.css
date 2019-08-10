@@ -26,6 +26,7 @@ body,
     overflow: hidden;
     position: absolute;
     margin-right: -115%;
+    font-size: 25%;
 }
 
 * {
@@ -344,4 +345,25 @@ canvas {
     width: 100%;
     height: 100%;
     background: black;
+}
+
+
+/* digit animation */
+
+#p1 h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }

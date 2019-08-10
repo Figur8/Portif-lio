@@ -1,6 +1,30 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
+
+function typeWriter(elemento) {
+    var apresentacao = document.getElementById('present');
+    console.log(apresentacao);
+    const textoArray = document.getElementById('present').innerHTML.split('');
+    apresentacao.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+        setTimeout(() => apresentacao.innerHTML += letra, 35 * i);
+    });
+}
+typeWriter();
+// Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
+// function typeWriter(elemento) {  
+//   const textoArray = elemento.innerHTML.split('');
+//   elemento.innerHTML = '';
+//   for(let i = 0; i < textoArray.length; i++) {
+//     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+//   }
+// }
+var apresentacao = document.getElementById('span');
+
+
+
+
 function resize() {
     let width = document.documentElement.clientWidth;
     let height = document.documentElement.clientHeight;

@@ -186,7 +186,7 @@ a {
 }
 
 .hint a {
-    color: yellow;
+    color: orangered;
     transition: all 250ms ease-out;
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
